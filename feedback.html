@@ -1,0 +1,376 @@
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xrgnzano" method="post">
+
+  <div class="header">
+<div class="container">
+  <div class="navbar">
+  <div class="logo">
+<img src="https://www.opendrive.com/s/MjZfNjMxMzMwOTJfSG43bWc?preview=1&folder_id=MjZfOTE0NjExM191dnpuRw" width="200px">
+    </div>
+
+<span style="font-size:30px;cursor:pointer;" class="menu" onclick="openNav()">&#9776;</span>
+    
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="about.html">About</a>
+<a href="feedback.html">Feedback</a>
+</div>
+
+  </div>
+<h4 class="title_feedback">Share Your Thoughts With Us!</h4>
+<fieldset id="fs-frm-inputs">
+  <label for="full-name">Name</label>
+  <input type="text" name="name" id="full-name" placeholder="Input Your Name Here" required="">
+  <label for="email-address">Email Address</label>
+  <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+  <label for="message">Message</label>
+  <textarea rows="5" name="message" id="message" placeholder="Share Your Comments And Suggestions With Us!" required=""></textarea>
+  <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+</fieldset>
+<input id="fs-frm-submit" type="submit" value="Submit" >
+<p id="fs-frm-status"></p>
+</form>
+
+<!---------- footer-------->
+  
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <img src="https://www.opendrive.com/s/MjZfNjMxMzMwOTJfSG43bWc?preview=1&folder_id=MjZfOTE0NjExM191dnpuRw">
+          <p>Hearts in Harmony is a brand that creates and sells t-shirts with the purpose of supporting Sitio Bebe, a community in need. The funds we raise will go towards assisting their community’s problems. We also aim to raise awareness about their community issues and help them overcome their challenges.</p>
+      </div>
+        <div class="footer-col-2">
+          <h3>Navigation Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+          </ul>
+    </div>
+                  <div class="footer-col-3">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+          </ul>
+    </div>
+  </div>
+      <hr>
+      <p class="copyright">Copyright 2023 Hearts In Harmony</p>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+<style>
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea,
+#fs-frm fieldset,
+#fs-frm optgroup,
+#fs-frm label,
+#fs-frm #card-element:disabled {
+  text-align: justify;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; 
+  font-family: inherit;
+  font-size: 100%;
+  color: #000;
+  font-weight: 700;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: calc(100vw - 16px);
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+#fs-frm label,
+#fs-frm legend,
+#fs-frm ::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: .825rem;
+  margin-bottom: .5rem;
+  padding-top: .2rem;
+  display: flex;
+  align-items: baseline;
+}
+h4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+#fs-frm input,
+#fs-frm select,
+#fs-frm textarea {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  background-color: white;
+  border: 2.5px solid #ff6279;
+  border-radius: 10px;
+  padding: .75em 1rem;
+  margin-bottom: 1.5rem;
+  width: 1000px;
+  height: 50px;
+  
+}
+#fs-frm input:focus,
+#fs-frm select:focus,
+#fs-frm textarea:focus {
+  background-color: white;
+  border: 2.5px solid #ff6279;
+  border-radius: 10px;
+}
+
+#fs-frm [type="button"],
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] { 
+  margin: 20px;
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  
+}
+
+#fs-frm [type="button"][disabled],
+#fs-frm [type="submit"][disabled]
+{
+  background-color: white;
+  border: 2.5px solid #ff6279;
+  border-radius: 10px;
+}
+
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus,
+#fs-frm [type="reset"]:focus {
+  outline: none;
+  border: 2.5px solid #ff6279;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif ;
+  color:#000
+}
+#fs-frm [type="submit"],
+#fs-frm [type="reset"] {
+  background-color: #ff6279;
+  border: 2.5px solid #ff6279;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 650;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/*-------menu--------*/
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav{
+  position: center;
+  flex: 1;
+  text-align: right;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background: #ff95b7;
+  opacity: 0.5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #cfcfcf;
+}
+.menu{
+    position: absolute;
+    margin-top: 13.5px;
+    margin-left: 1250px
+  }
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+.container{
+  padding: 0;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.header .row{
+  margin-top: 70px;
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 100%; 
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+/*--------footer-------*/
+
+.footer{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  margin-top: 50px;
+  background: #000;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 30px 0 20px;
+}
+
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+}
+.footer-col-2{
+  flex-basis: 1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+</style>
+
+<script>
+    var form = document.getElementById("fs-frm");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("fs-frm-status");
+  var submit = document.getElementById("fs-frm-submit");
+  var data = new FormData(event.target);
+
+  submit.setAttribute('disabled', true);
+  
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
+      status.innerHTML = "Thanks for your message!";
+      submit.removeAttribute('disabled');
+      form.reset()
+    } else {
+      submit.removeAttribute('disabled');
+      form.reset()
+      response.json().then(data => {
+        if (Object.hasOwn(data, 'errors')) {
+          status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+        } else {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        }
+      })
+    }
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+    submit.removeAttribute('disabled');
+  });
+}
+form.addEventListener("submit", handleSubmit)
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
+</script>
